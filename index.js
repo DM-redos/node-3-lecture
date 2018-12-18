@@ -4,7 +4,7 @@ const { logger } = require("./middlewares");
 const app = express();
 const numbers = [12, 4, 63, 19, 48];
 
-app.use(json(logger));
+app.use(json());
 
 // We need to know the date and time for every request.
 app.use(logger);
